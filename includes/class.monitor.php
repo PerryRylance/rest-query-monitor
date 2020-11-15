@@ -57,5 +57,7 @@ class Monitor
 	public function onQuery($qstr)
 	{
 		$this->currentEntry->log($qstr);
+		
+		return $qstr;
 	}
 }
